@@ -1,16 +1,16 @@
 {
     "manifest_version": 3,
     "name": "UnCheckMate",
-    "description": "Chrome extension that automatically unchecks the \"follow company\" checkbox in easy apply applications",
+    "description": "Automatically unchecks the \"follow company\" checkbox in LinkedIn easy apply applications",
     "version": "1.0",
+    "icons": {
+        "48": "red_thumb_down.png",
+        "128": "red_thumb_down_large.png"
+    },
     "content_scripts": [
         {
-            "js": [
-                "content.js"
-            ],
-            "matches": [
-                "https://www.linkedin.com/jobs/*"
-            ]
+            "js": ["content.js"],
+            "matches": ["https://www.linkedin.com/jobs/*"]
         }
     ]
 }
